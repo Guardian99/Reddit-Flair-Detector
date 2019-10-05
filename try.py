@@ -1,4 +1,3 @@
-# ====================================
 import math
 import praw
 import pprint
@@ -17,7 +16,6 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 import warnings
 warnings.filterwarnings("ignore")
-# ====================================
 
 
 reddit = praw.Reddit(client_id='qftDPmjb1sdKrg',client_secret='w5JbV-0irh1FaTOqRYeU2yZDeXc', user_agent='SC')
