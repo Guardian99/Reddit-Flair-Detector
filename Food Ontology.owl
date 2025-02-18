@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gra.fo/schema/untitled-ekg#"
+     xml:base="http://www.gra.fo/schema/untitled-ekg"
+     xmlns:gf="http://www.gra.fo/schema/untitled-ekg#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.gra.fo/schema/untitled-ekg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#belongs_to -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#belongs_to">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>BELONGS_TO</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#has_recipe -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#has_recipe">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>HAS_RECIPE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#prefers -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#prefers">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>PREFERS</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#recipe_uses_ingredient -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#recipe_uses_ingredient">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>RECIPE_USES_INGREDIENT</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#recommended -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#recommended">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>RECOMMENDED</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#reviews -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#reviews">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>REVIEWS</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#similar_to -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#similar_to">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>SIMILAR_TO</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#wrote -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#wrote">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:range rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>WROTE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#comment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#comment">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>comment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#containsdairy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#containsdairy">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>containsDairy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#containsgluten -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#containsgluten">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>containsGluten</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#containsnuts -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#containsnuts">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>containsNuts</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#cookingmethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#cookingmethod">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>cookingMethod</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#cooktime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#cooktime">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:comment>This is to be calculated in minutes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>cookTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#description">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#"/>
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#dietarylabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#dietarylabel">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>dietaryLabel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#dietaryrestrictions -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#dietaryrestrictions">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>dietaryRestrictions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#email">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#flavorprofile -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#flavorprofile">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>flavorProfile</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#instructions -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#instructions">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>instructions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#isveganfriendly -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#isveganfriendly">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>isVeganFriendly</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#level -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#level">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#"/>
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#Category"/>
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+                    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#phone -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#phone">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>phone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#preferences -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#preferences">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>preferences</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#preparationtime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#preparationtime">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>preparationTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#preptime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#preptime">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:comment>This is to be calculated in minutes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>prepTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#price -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#price">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#rating">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#reviewdate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#reviewdate">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>reviewDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#source -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#source">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#yield -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.gra.fo/schema/untitled-ekg#yield">
+        <rdfs:domain rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>yield</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg# -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#">
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>FoodItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Category -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Category">
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Course -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Course">
+        <rdfs:subClassOf rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Cuisine -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Cuisine">
+        <rdfs:subClassOf rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Customer -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Customer">
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Ingredient -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Ingredient">
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Ingredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Recipe -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Recipe">
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Recipe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Review -->
+
+
+    <owl:Class rdf:about="http://www.gra.fo/schema/untitled-ekg#Review">
+        <rdfs:comment>Customers rate the food items on a scale of 1 to 5</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#AlexJohnson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#AlexJohnson">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:comment>40-45, Male, New York, USA, Gluten-free, Prefers healthy food, Regular visitor</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Alex Johnson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#American -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#American">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>American</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Appetizer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Appetizer">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Course"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Appetizer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Asian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Asian">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Asian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#CaesarSalad -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#CaesarSalad">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Caesar Salad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#CaesarSaladRecipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#CaesarSaladRecipe">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Caesar Salad Recipe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Chicken -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Chicken">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Chicken</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#ChickenCurry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#ChickenCurry">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Chicken Curry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#ChickenCurryRecipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#ChickenCurryRecipe">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Chicken Curry Recipe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Continental -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Continental">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Continental</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#DavidLee -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#DavidLee">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:comment>50-55, Male, Beijing, China, Lactose intolerant, Prefers spicy food, Occasional visitor</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>David Lee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Dessert -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Dessert">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Course"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Dessert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#EmilyDavis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#EmilyDavis">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:comment>32-37, Female, Paris, France, Vegetarian, Prefers gourmet food, Occasional visitor</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Emily Davis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Indian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Indian">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Indian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Italian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Italian">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Category"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Italian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#JohnDoe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#JohnDoe">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:comment>30-35, Male, Noida, India, Vegetarian, Prefers spicy food, Frequent visitor</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>John Doe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#MainCourse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#MainCourse">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Course"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Main Course</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#MargheritaPizza -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#MargheritaPizza">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Margherita Pizza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#MargheritaPizzaRecipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#MargheritaPizzaRecipe">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Margherita Pizza Recipe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#MichaelBrown -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#MichaelBrown">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Customer"/>
+        <rdfs:comment>45-50, Male, London, UK, Allergic to nuts, Prefers comfort food, Frequent visitor</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Michael Brown</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#MixedVegetables -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#MixedVegetables">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Mixed Vegetables</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#MozarellaCheese -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#MozarellaCheese">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Mozarella Cheese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Paneer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Paneer">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Paneer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Pepperoni -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Pepperoni">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Pepperoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Salad -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Salad">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Course"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Salad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Salt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Salt">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Salt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Tiramisu -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Tiramisu">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Tiramisu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#TiramisuRecipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#TiramisuRecipe">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Tiramisu Recipe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#TomatoSauce -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#TomatoSauce">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Tomato Sauce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#VegetableBiryani -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#VegetableBiryani">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Vegetable Biryani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#VegetableBiryaniRecipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#VegetableBiryaniRecipe">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Recipe"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Vegetable Biryani Recipe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Water -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Water">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Water</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#WheatFlour -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#WheatFlour">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Wheat Flour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#Yeast -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#Yeast">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Ingredient"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>Yeast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#_21a043df-4911-4d47-bb25-f8e2606730c8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#_21a043df-4911-4d47-bb25-f8e2606730c8">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#_25d18aa4-1dc0-4e56-aff8-960da025f22c -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#_25d18aa4-1dc0-4e56-aff8-960da025f22c">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#_2dc2edf5-ad5c-4a93-b0dc-3f3ff9a68c4a -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#_2dc2edf5-ad5c-4a93-b0dc-3f3ff9a68c4a">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#_32e9a695-b0cc-4ea3-821e-3f94dc675b65 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#_32e9a695-b0cc-4ea3-821e-3f94dc675b65">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gra.fo/schema/untitled-ekg#_db3338a0-572d-4dcf-b7a7-320b34ed273d -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.gra.fo/schema/untitled-ekg#_db3338a0-572d-4dcf-b7a7-320b34ed273d">
+        <rdf:type rdf:resource="http://www.gra.fo/schema/untitled-ekg#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.gra.fo/schema/untitled-ekg"/>
+        <rdfs:label>4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.gra.fo/schema/untitled-ekg">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Food Ontology</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17) https://github.com/owlcs/owlapi/ -->
+
+
